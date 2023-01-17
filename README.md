@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# create-react-adv-struct
+
+## About
+Create a react app with advanced MVC structure to experience typescript, MUI design, router, redux, axios, login/signup forms, and much more in a single setup.
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
