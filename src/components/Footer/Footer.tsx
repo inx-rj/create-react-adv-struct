@@ -7,7 +7,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ title }) => {
     return (
         <>
-            <footer style={{ textAlign: "center", border: "1px solid #ccc", padding: '12px' }}>
+            <footer className='bg-black border border-gray-400 text-center p-3'>
                 {title}
             </footer>
         </>

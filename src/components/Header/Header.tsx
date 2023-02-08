@@ -10,17 +10,22 @@ interface HeaderProps {
     title: string;
 }
 
+// Note: Follow the sequence of classname as below,
+// '<position> <h/w/> <bg> <border> <font> <p/m>'
+
 const Header: React.FC<HeaderProps> = ({ title }) => {
     return (
-        <>
-            <header style={{ textAlign: "center", border: "1px solid #ccc", padding: '12px' }}>
+        <div>
+            <header className='sticky top-0 right-0 left-0 bg-black border border-gray-400 text-center p-3'>
                 {title}
             </header>
-            <main style={{ padding: '20px' }}>
+            <main className='p-4'>
+                {/* <div className="rounded-lg border-4 border-dashed border-gray-300 text-center sm:text-start m-5 p-3"> */}
                 <Outlet />
+                {/* </div> */}
             </main>
             <Footer title={'Footer Component'} />
-        </>
+        </div>
     );
 };
 

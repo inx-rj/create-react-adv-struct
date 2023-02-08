@@ -1,7 +1,38 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --scrollbar-track: #AAAAAA;
+  --scrollbar-thumb: #D2001A;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body,
+#root,
+html {
   margin: 0;
   height: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   font-size: larger;
+}
+
+/* Scrollbar custom design */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem !important;
+  background-color: var(--scrollbar-thumb);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1rem !important;
+  background-color: var(--scrollbar-track) !important;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4) !important;
 }
